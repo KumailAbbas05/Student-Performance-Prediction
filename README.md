@@ -1,5 +1,8 @@
 # Student Performance Prediction
 
+[![CI](https://github.com/KumailAbbas05/Student-Performance-Prediction/actions/workflows/ci.yml/badge.svg)](https://github.com/KumailAbbas05/Student-Performance-Prediction/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Regression-orange)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-Linear%20Regression-yellow)
