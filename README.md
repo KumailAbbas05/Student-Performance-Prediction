@@ -1,10 +1,26 @@
 # Student Performance Prediction
 
-A beginner-friendly end-to-end Machine Learning project that predicts a student's final score using academic and lifestyle features.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Regression-orange)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-Linear%20Regression-yellow)
 
-## Project Goal
+An end-to-end beginner Machine Learning project that predicts a student's final score from academic and lifestyle features.
 
-The goal of this project is to build a simple regression model that predicts `Final_Score` using:
+## Project Overview
+
+The project follows a complete supervised-learning workflow:
+
+1. Load and inspect the dataset
+2. Select input features and target
+3. Split data into training and testing sets
+4. Train a Linear Regression model
+5. Generate predictions
+6. Evaluate model performance
+7. Predict the score of a new example student
+
+## Features
+
+The model uses:
 
 - Study hours
 - Attendance percentage
@@ -12,22 +28,27 @@ The goal of this project is to build a simple regression model that predicts `Fi
 - Sleep hours
 - Previous score
 
-## Machine Learning Workflow
+Target:
 
-1. Load the dataset
-2. Explore the data
-3. Select input features and target
-4. Split the data into training and testing sets
-5. Train a Linear Regression model
-6. Make predictions
-7. Evaluate the model
-8. Predict a score for a new student
+- Final score
+
+## Model Results
+
+Using an 80/20 train-test split with `random_state=42`:
+
+| Metric | Result |
+|---|---:|
+| Mean Absolute Error | 3.41 |
+| Mean Squared Error | 15.54 |
+| R² Score | 0.84 |
+
+These results are from the included synthetic dataset and are intended only for learning and portfolio demonstration.
 
 ## Dataset
 
-This repository includes a **synthetic dataset** created only for learning and portfolio demonstration.
+The repository contains **200 synthetic student records**.
 
-It is **not real student data** and should not be used for real educational decisions.
+> The data is artificially generated. It is not real student data and should not be used for actual educational decisions.
 
 ## Technologies
 
@@ -38,7 +59,7 @@ It is **not real student data** and should not be used for real educational deci
 - Scikit-learn
 - Jupyter Notebook
 
-## Repository Structure
+## Project Structure
 
 ```text
 Student-Performance-Prediction/
@@ -53,31 +74,33 @@ Student-Performance-Prediction/
 └── README.md
 ```
 
-## How to Run
-
-Install the libraries:
+## Run the Project
 
 ```bash
 pip install -r requirements.txt
-```
-
-Then run:
-
-```bash
 python src/train_model.py
 ```
 
-You can also open the Jupyter notebook for a step-by-step version of the project.
+The Jupyter notebook provides the same workflow step by step.
 
-## Model
+## What I Practiced
 
-This project uses **Linear Regression** because it is simple, interpretable, and suitable for a beginner regression project.
+- Regression problems
+- Feature/target separation
+- Train-test splitting
+- Model fitting
+- Prediction
+- MAE, MSE and R²
+- Comparing actual and predicted values
+- Basic ML visualization
 
-## Evaluation Metrics
+## Future Improvements
 
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- R² Score
+- Compare Linear Regression with Random Forest
+- Add cross-validation
+- Add feature-importance analysis
+- Use a real public dataset
+- Build a small prediction interface
 
 ## Author
 
